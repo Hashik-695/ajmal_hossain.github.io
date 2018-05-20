@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+.col-1 {
+  width: 2em;
+}
+
+.col-2 {
+  width: 4em;
+}
+
+.col-3 {
+  width: 6em;
+}
+
+.col-4 {
+  width: 8em;
+}
+
+.col-5 {
+  width: 10em;
+}
+
+.col-6 {
+  width: 12em;
+}
+
+.bob-banker-profile {
+  background-image: url("/img/bob-banker.png");
+}
+
+.patty-plume-profile {
+  background-image: url("/img/patty-plume.png");
+}
+
+.sandra-smith-profile {
+  background-image: url("/img/sandra-smith.png");
+}
+
+.tiny {
+  font-size: 8px;
+}
+
+.small {
+  font-size: 11px;
+}
+
+.medium {
+  font-size: 13px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.warning-button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 12px;
+}
+.warning-button:hover {
+  background-color: #ffb733;
+}
+
+body {
+  background-color: Dark;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-container {
+  background-color: #002e40;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+}
+
+nav {
+  text-align: center;
+  width: 640px;
+  margin: 0px auto;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  width: 24%;
+  display: inline-block;
+}
+
+nav li a {
+  font-size: 15px;
+  color: white;
+}
+
+nav li a.active {
+  color: #aaaaaa;
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    width: 90%;
+  }
+
+  nav li a {
+    font-size: 18px;
+  }
+}
+section {
+  padding-top: 40px;
+  height: 100vh;
+  width: 100%;
+}
+
+section .content {
+  margin: 0px auto;
+  max-width: 960px;
+}
+
+@media screen and (max-width: 640px) {
+  section .content {
+    width: 90%;
+  }
+}
+section .content a {
+  color: #002e40;
+}
+
+section:nth-child(odd) {
+  background-color: #002e40;
+  color: white;
+}
+
+section:nth-child(odd) a {
+  color: white;
+}
+
+section:nth-child(even) {
+  background-color: #2f2730;
+  color: white;
+}
+
+section:nth-child(odd) a {
+  color: white;
+}
+
+.bottom-link {
+  margin-top: 80px;
+  font-style: italic;
+}
+
+.barfiller {
+  width: 100%;
+  height: 25px;
+  background: #b6f442;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+}
+
+.barfiller .fill {
+  display: block;
+  position: relative;
+  width: 0px;
+  height: 100%;
+  background: #21091d;
+  z-index: 1;
+}
+
+.barfiller .tipWrap {
+  display: none;
+}
+
+.barfiller .tip {
+  margin-top: -30px;
+  padding: 2px 4px;
+  font-size: 11px;
+  color: #fff;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+  background: #333;
+}
+
+.barfiller .tip:after {
+  border: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent;
+  border-width: 6px 6px 0 6px;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 9px;
+  top: 100%;
+  z-index: 9;
+}

@@ -1,0 +1,78 @@
+//===Sarting Media Query ==//
+
+@mixin tiny-screen(){
+  @media only screen and (max-width: 320px){
+    @content;
+  }
+
+}
+
+@mixin small-screen(){
+  @media only screen and (max-width: 480px){
+    @content;
+  }
+}
+
+@mixin medium-screen(){
+  @media only screen and (max-width: 680px){
+    @content;
+  }
+}
+
+@mixin large-screen(){
+  @media only screen and (max-width: 960px){
+    @content;
+  }
+}
+
+//===End of Media Query ==//
+
+//===Google fonts ==//
+@mixin google-font($font) {
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font})
+}
+
+//=== warning color  ==//
+@mixin warning {
+  background-color: orange;
+  color: #fff;
+  &:hover {
+    background-color: lighten(orange,10%);
+  }
+}
+
+//===For shadowing ==//
+@mixin box-shadow($shadows...) {
+  box-shadow: $shadows;
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+}
+
+
+//===For large text ==//
+@mixin large-text {
+  font: {
+    size: 22px;
+    weight: bold;
+  }
+}
+
+//===For rounded border radius ==//
+@mixin rounded($radius: 6px) {
+  border-radius: $radius;
+}
+
+//===For rounded border radius with border line ==//
+@mixin box($radius: 6px, $border: 1px solid #000) {
+  @include rounded($radius);
+  border: $border;
+}
+
+//===For degining links ==//
+@mixin fancy-links {
+  a {
+    font-style: italic;
+    text-decoration: none;
+  }
+}
