@@ -1,164 +1,142 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+/*$Title-font: "Lobster Two", cursive;
+$text-font: "Alegreya Sans", Arial, sans-serif;
+$headline-font: "Titillium Web", Georgia, serif;*/
 .col-1 {
-  width: 2em;
-}
+  width: 2em; }
 
 .col-2 {
-  width: 4em;
-}
+  width: 4em; }
 
 .col-3 {
-  width: 6em;
-}
+  width: 6em; }
 
 .col-4 {
-  width: 8em;
-}
+  width: 8em; }
 
 .col-5 {
-  width: 10em;
-}
+  width: 10em; }
 
 .col-6 {
-  width: 12em;
-}
+  width: 12em; }
 
 .bob-banker-profile {
-  background-image: url("/img/bob-banker.png");
-}
+  background-image: url("/img/bob-banker.png"); }
 
 .patty-plume-profile {
-  background-image: url("/img/patty-plume.png");
-}
+  background-image: url("/img/patty-plume.png"); }
 
 .sandra-smith-profile {
-  background-image: url("/img/sandra-smith.png");
-}
+  background-image: url("/img/sandra-smith.png"); }
 
 .tiny {
-  font-size: 8px;
-}
+  font-size: 8px; }
 
 .small {
-  font-size: 11px;
-}
+  font-size: 11px; }
 
 .medium {
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 .large {
-  font-size: 18px;
-}
+  font-size: 18px; }
 
+/*@include google-font("Lobster+Two");
+@include google-font("Alegreya+Sans");
+@include google-font("Titillium+Web");*/
 a {
   font-style: italic;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .warning-button {
   background-color: orange;
   color: #fff;
-  padding: 8px 12px;
-}
-.warning-button:hover {
-  background-color: #ffb733;
-}
+  padding: 8px 12px; }
+  .warning-button:hover {
+    background-color: #ffb733; }
 
 body {
   background-color: Dark;
   padding: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
+
+#bootstrap-overrides h1 {
+  font-family: 'Modern Antiqua', cursive; }
+
+h4 {
+  font-family: 'Modern Antiqua', cursive; }
+
+strong {
+  font-family: 'IM Fell French Canon SC', serif; }
+
+p {
+  font-family: 'Modern Antiqua', cursive; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 .nav-container {
   background-color: #002e40;
   width: 100%;
   position: fixed;
-  left: 0px;
-}
+  left: 0px; }
 
 nav {
   text-align: center;
   width: 640px;
-  margin: 0px auto;
-}
+  margin: 0px auto; }
 
 nav ul {
-  padding: 0px;
-}
+  padding: 0px; }
 
 nav li {
   width: 24%;
-  display: inline-block;
-}
+  display: inline-block; }
 
 nav li a {
   font-size: 15px;
-  color: white;
-}
+  color: white; }
 
 nav li a.active {
-  color: #aaaaaa;
-}
+  color: #aaaaaa; }
 
 @media screen and (max-width: 640px) {
   nav {
-    width: 90%;
-  }
+    width: 90%; }
 
   nav li a {
-    font-size: 18px;
-  }
-}
+    font-size: 18px; } }
 section {
   padding-top: 40px;
   height: 100vh;
-  width: 100%;
-}
+  width: 100%; }
 
 section .content {
   margin: 0px auto;
-  max-width: 960px;
-}
+  max-width: 960px; }
 
 @media screen and (max-width: 640px) {
   section .content {
-    width: 90%;
-  }
-}
+    width: 90%; } }
 section .content a {
-  color: #002e40;
-}
+  color: #002e40; }
 
 section:nth-child(odd) {
   background-color: #002e40;
-  color: white;
-}
+  color: white; }
 
 section:nth-child(odd) a {
-  color: white;
-}
+  color: white; }
 
 section:nth-child(even) {
   background-color: #2f2730;
-  color: white;
-}
+  color: white; }
 
 section:nth-child(odd) a {
-  color: white;
-}
+  color: white; }
 
 .bottom-link {
   margin-top: 80px;
-  font-style: italic;
-}
+  font-style: italic; }
 
 .barfiller {
   width: 100%;
@@ -168,8 +146,7 @@ section:nth-child(odd) a {
   position: relative;
   margin-bottom: 20px;
   box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
-}
+  -moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5); }
 
 .barfiller .fill {
   display: block;
@@ -177,12 +154,10 @@ section:nth-child(odd) a {
   width: 0px;
   height: 100%;
   background: #21091d;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .barfiller .tipWrap {
-  display: none;
-}
+  display: none; }
 
 .barfiller .tip {
   margin-top: -30px;
@@ -192,8 +167,7 @@ section:nth-child(odd) a {
   left: 0px;
   position: absolute;
   z-index: 2;
-  background: #333;
-}
+  background: #333; }
 
 .barfiller .tip:after {
   border: solid;
@@ -204,5 +178,6 @@ section:nth-child(odd) a {
   position: absolute;
   left: 9px;
   top: 100%;
-  z-index: 9;
-}
+  z-index: 9; }
+
+/*# sourceMappingURL=main.css.map */

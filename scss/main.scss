@@ -30,9 +30,9 @@ $font-sizes : (tiny: 8px, small: 11px, medium: 13px, large: 18px);
   }
 }
 
-@include google-font("Lobster+Two");
+/*@include google-font("Lobster+Two");
 @include google-font("Alegreya+Sans");
-@include google-font("Titillium+Web");
+@include google-font("Titillium+Web");*/
 
 @include fancy-links;
 
@@ -45,12 +45,30 @@ $font-sizes : (tiny: 8px, small: 11px, medium: 13px, large: 18px);
 //====== End of Default desighn ==//
 
 
-
 body {
   background-color: $theme;
 
   padding: 0px;
   margin: 0px;
+}
+
+#bootstrap-overrides h1 {
+  font-family: 'Modern Antiqua', cursive;
+}
+ 
+
+h4{
+
+  font-family: 'Modern Antiqua', cursive;
+}
+
+strong{
+  font-family: 'IM Fell French Canon SC', serif;
+}
+
+p{
+
+  font-family: 'Modern Antiqua', cursive;
 }
 
 ul {
